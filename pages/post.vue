@@ -3,7 +3,7 @@
     <div id="example-2">
       <div class="head">
         <p>2018.11.4</p>
-        <a class="square_btn"><button v-on:click="greet">送信</button></a>
+        <a href='/completion' class="square_btn"><button v-on:click="greet">送信</button></a>
       </div>
 
       <input v-model="message" placeholder="今日どんなことがあったの？">
@@ -31,7 +31,7 @@ export default {
       let { data } = await axios.post('http://ec2-18-191-90-196.us-east-2.compute.amazonaws.com:8080/getSentiment',params);
       console.log(data)
       console.log(this)
-      window.location.href = '/completion';
+      // window.location.href = '/completion';
       console.log(this.message)
       console.log(data.UserName)
     }
