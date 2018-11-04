@@ -29,7 +29,7 @@
 
     <div >
         <div class="message" id="word">
-            <p>{{message}} </p>
+            <p class="text">{{message}} </p>
         </div>
     </div>
   </div>
@@ -78,6 +78,8 @@ export default {
         click(obj){
             //document.getElementById("word").textContent = obj.article
             this.message = obj.article
+            console.log(obj)
+            document.querySelector(".message .text").style.borderColor = obj.color
         },
         getMonthName(month){
             var monthName = ['1','2','3','4','5','6','7','8','9','10','11','12'];
@@ -281,7 +283,7 @@ span{
     margin: 0rem auto;
     padding: 1rem;
     border-radius: 1rem;
-    /*border: medium solid #ff00ff;*/
+    border: medium solid #fff;
 }
 
 </style>
