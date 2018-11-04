@@ -3,7 +3,7 @@
     <div id="example-2">
       <div class="head">
         <p>2018.11.4</p>
-        <a href="#" class="square_btn"><button v-on:click="greet">送信</button></a>
+        <a class="square_btn"><button v-on:click="greet">送信</button></a>
       </div>
 
       <input v-model="message" placeholder="今日どんなことがあったの？">
