@@ -1,8 +1,9 @@
 <template class="submited__container">
   <div class="submited__container--popup">
     <h1>送信できたよ！</h1>
-    <h2>今回の日記カラーは</h2>
+    <h2>今回の日記カラーは...</h2>
     <div class="circle"></div>
+    <img class="colorBar" src="./grad.png">
     <a href="calender" class="submited__btn--back">カレンダーへ戻る</a>
     <script>
       var changeColor = function(){
@@ -43,10 +44,11 @@ export default {
 .submited__container--popup {
   color: #333;
   width: 90%;
+  height: 90vh;
   margin: 3rem auto;
   padding: 2rem 0;
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   align-items: center;
   flex-direction: column;
   background-color: #fefefe;
@@ -98,11 +100,12 @@ export default {
 }
 
 .circle{
-  width: 80px;
-  height: 80px;
+  width: 157px;
+  height: 157px;
   border-radius: 50%;
   box-shadow: 0rem 0rem 0.5rem #aaa;
-  margin: 1.5rem 0;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .submited__btn--back {
@@ -113,6 +116,22 @@ export default {
 
 .submited__btn--back:hover {
   background-color: #707070;
+}
+
+h1{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 33px;
+}
+h2{
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+
+img{
+  width: 100%;
+  padding-bottom: 40px;
+  font-size: 20px;
 }
 
 </style>
