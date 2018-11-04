@@ -22,7 +22,9 @@
           </tbody>
       </table>
 
-      <a href="post"><i class="fas fa-plus"></i></a>
+      <a href="/post">
+        <i class="fas fa-plus"></i>
+      </a>
       <div  >
           <img class="colorBar" src="./grad.png">
         </div>
