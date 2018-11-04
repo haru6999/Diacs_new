@@ -84,6 +84,8 @@ button{
 	  border-radius: 25px;
     text-decoration: none;
     background-color: #A5A5A5;
+    margin-top: 0.5rem;
+    height: 30px;
     transition: .1s;
 }
 
