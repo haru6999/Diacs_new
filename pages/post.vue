@@ -31,7 +31,7 @@ export default {
       let { data } = await axios.post('http://ec2-18-191-90-196.us-east-2.compute.amazonaws.com:8080/getSentiment',params);
       console.log(data)
       console.log(this)
-      this.$router.push("completion")
+      window.location.href = '/completion';
       console.log(this.message)
       console.log(data.UserName)
     }
