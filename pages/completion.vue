@@ -4,7 +4,7 @@
     <h2>今回の日記カラーは...</h2>
     <div class="circle"></div>
     <img class="colorBar" src="./grad.png">
-    <a href="calender" class="submited__btn--back">カレンダーへ戻る</a>
+    <a href="/calender" class="submited__btn--back">カレンダーへ戻る</a>
     <script>
       var changeColor = function(){
         var resultNum = document.querySelector('.circle');
